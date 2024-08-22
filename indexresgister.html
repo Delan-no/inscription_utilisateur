@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Inscription</title>
+  </head>
+  <body>
+    <h2>Formulaire d'inscription</h2>
+    <form action="register.php" method="POST">
+      <div class="container">
+        <h1>Register</h1>
+        <!-- <p>Please fill in this form to create an account.</p> -->
+        <hr />
+
+        <label for="username"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="username"
+          id="username"
+          required
+        />
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="email"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
+       
+        <label for="password"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          id="password"
+          required
+        />
+
+        <!-- <label for="password-repeat"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="password-repeat"
+          id="password-repeat"
+          required
+        /> -->
+        <hr />
+        <button type="submit" class="registerbtn">Register</button>
+        <a href="/login.html">J'ai déjà un compte</a>
+      </div>
+    </form>
+  </body>
+</html>
